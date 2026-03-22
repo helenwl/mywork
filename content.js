@@ -1,15 +1,15 @@
 // ── UI STRINGS (bilingual) ─────────────────────────────────
 const UI = {
   en: {
-    navWork:    'My Work',
-    navAbout:   'About Me',
+    navWork:    'Context',
+    navAbout:   'My Work',
     navContact: 'Contact ↗',
     cmHeading:  'Get in <em>touch.</em>',
     cmSub:      'Always interested to hear new points of view...',
   },
   zh: {
-    navWork:    '我的工作',
-    navAbout:   '关于我',
+    navWork:    '背景',
+    navAbout:   '我的工作',
     navContact: '联系 ↗',
     cmHeading:  '与我<em>联系。</em>',
     cmSub:      '创始人、投资者、研究者及合作者 — 欢迎与Helen建立连接。',
@@ -22,7 +22,7 @@ const CONTENT = {
   work: {
     eyebrow:  { en: 'My Work',  zh: '我的工作' },
     headline: {
-      en: 'My work spans the drug discovery + development pipeline',
+      en: 'My work across the life sciences ecosystem',
       zh: '覆盖药物发现与开发全管线的专业经验'
     },
     tagline: {
@@ -36,7 +36,7 @@ const CONTENT = {
     // Leave badgeImg as null to display the text abbreviation instead.
     pipeline: [
       {
-        tag:        { en: 'My PhD Research',   zh: '研究'   },
+        tag:        { en: 'PhD & Industrial Research in Small Molecule Crystallography',   zh: '研究'   },
         title:      { en: 'Drug Discovery',  zh: '药物发现' },
         sublabel:   { en: 'Selecting promising drug candidates', zh: '药物晶体学 · 冷冻电镜 · 小分子' },
         badgeAbbr:  'CAM',
@@ -44,8 +44,8 @@ const CONTENT = {
         badgeImg:   'logos/cambridge.png.webp',
         body: {
           en: `
-            <p class="card-text">Completed my PhD in the Electron Microscopy Group at Cambridge University. Discovered 5 small molecule crystal structures.
-            Published <a class="card-link" href="#" onclick="openAboutCard(1); return false;">4 first-author papers</a>.</p>
+            <p class="card-text">During my PhD in Electron Microscopy at Cambridge University, I worked with GSK and discovered 5 small molecule crystal structures. Crystallography is used during discovery to determine structrue-activity relationships in biological targets.
+            Find my publications <a class="card-link" href="#" onclick="openAboutCard(1); return false;">here</a>.</p>
             <div class="pill-row">
               <span class="pill">Pharmaceutical Crystallography</span>
               <span class="pill">Cryo-EM</span>
@@ -57,7 +57,7 @@ const CONTENT = {
         }
       },
       {
-        tag:        { en: 'Industrial R&D Role',   zh: '工业界' },
+        tag:        { en: 'PhD & Industrial Research in Small Molecule Crystallography',   zh: '工业界' },
         title:      { en: 'Drug Development', zh: '药物开发' },
         sublabel:   { en: 'Designing drug delivery modalities', zh: '长效注射剂 · 纳米科学 · 电子显微镜' },
         badgeAbbr:  'GSK',
@@ -65,7 +65,7 @@ const CONTENT = {
         badgeImg:   'logos/gsk.png',
         body: {
           en: `
-            <p class="card-text">Embedded in Medicines Supply and Development team at GSK R&D alongside PhD. Developed nano-milling processes to enhance slow-release properties of cabotegravir, a long-acting injectable HIV drug.</p>
+            <p class="card-text">My PhD also involved working downstream of discovery in drug development. Specifically, I worked on nano-milling processes to enhance slow-release properties of cabotegravir, a long-acting injectable HIV drug.</p>
             <div class="pill-row">
               <span class="pill">Long-Acting Injectables</span>
               <span class="pill">Cabotegravir</span>
@@ -101,7 +101,7 @@ const CONTENT = {
         },
         body: {
           en: `
-            <p class="card-text">Freelance AI Researcher: developed structure prediction capabilities (to streamline production of rare-earth minerals) at <a href="https://www.altrove.ai" target="_blank" rel="noopener" class="card-link">Altrove</a>, a deep-tech startup (at seed round). Built a virtual lab connecting experimental outputs to the in-house AI model.</p>
+            <p class="card-text">AI Researcher: with crystallography domain expertise, I developed structure prediction capabilities (to streamline production of rare-earth minerals) at <a href="https://www.altrove.ai" target="_blank" rel="noopener" class="card-link">Altrove</a>, a deep-tech startup. Built a virtual lab connecting experimental outputs to the in-house AI model. For both organic and inorganic materials systems, there are many parallels in manufacturing.</p>
             <div class="pill-row">
               <span class="pill">Crystal Structure Prediction</span>
               <span class="pill">Virtual Lab/AI dev</span>
@@ -111,7 +111,7 @@ const CONTENT = {
         }
       },
       {
-        tag:        { en: 'My Core Interests',   zh: '临床'   },
+        tag:        { en: 'Pro Bono Work',   zh: '临床'   },
         title:      { en: 'Clinical Development', zh: '临床开发' },
         sublabel:   { en: 'Getting the right drugs to the right people', zh: '性别健康差距 · 可解释AI · 女性健康科技' },
         badgeAbbr:  'LCFI',
@@ -119,7 +119,7 @@ const CONTENT = {
         badgeImg:   'logos/lcfi.png.jpeg',
         body: {
           en: `
-            <p class="card-text">As a Fellow at LCFI (Leverhulme Centre for the Future of Intelligence, Cambridge) — hosted founder events to highlight disparities in health equity and built tools to predict sex-specific drug dosages from clinical trial data, addressing bias embedded in AI models and the dangerous legacy of missing data.</p>
+            <p class="card-text">I am a Fellow at LCFI (Leverhulme Centre for the Future of Intelligence, Cambridge) where I work with academic and industry contacts to close the health equity gap e.g., by hosting founder events to help startups find people/funding.</p>
             <div class="pill-row">
               <span class="pill">Gender Health Gap</span>
               <span class="pill">Explainable AI</span>
@@ -133,7 +133,7 @@ const CONTENT = {
       },
       {
         tag:        { en: 'Life Sciences Strategy and Due Diligence', zh: '风险投资' },
-        title:      { en: 'Commercial', zh: '商业化与并购' },
+        title:      { en: 'Go To Market', zh: '商业化与并购' },
         sublabel:   { en: 'Making a medicine a commercial success', zh: '药物战略 · 商业与供应商尽职调查' },
         badgeAbbr:  'LEK',
         badgeLabel: { en: 'L.E.K. Consulting', zh: 'L.E.K. 咨询' },
@@ -161,9 +161,9 @@ const CONTENT = {
         */
         body: {
           en: `
-            <p class="card-text">Life Sciences Specialist at L.E.K. Consulting (London).  
+            <p class="card-text">Life Sciences Specialist at L.E.K. Consulting.  
             Specialising in pharmaceutical strategy, commercial due diligence, and vendor due diligence.  
-            Active interest/involvement in China–Europe cross-border activity.</p>
+            Active interest/developing involvement in China–Europe biotech activity.</p>
             <div class="pill-row">
               <span class="pill">Pharmaceutical Strategy</span>
               <span class="pill">Commercial Due Diligence</span>
@@ -182,22 +182,19 @@ const CONTENT = {
     eyebrow:  { en: 'About Me', zh: '关于我' },
     headline: { en: '', zh: '' },
     tagline: {
-      en: "I've worked in both the lab and the boardroom. I care about getting the right medicines to the right people.",
+      en: "British-Chinese scientist working across the global life sciences ecosystem. Experienced with academic research, industrial R&D, and commercial strategy.",
       zh: '从实验室到董事会，Helen是一位材料科学家与研究者，研究领域横跨药物表征、纳米医学与精准医疗人工智能。'
     },
     cards: [
       {
-        title:   { en: 'Background & Bio', zh: '个人简介' },
-        preview: { en: 'Journey from bench to boardroom', zh: '从实验台到董事会的职业历程' },
+        title:   { en: 'Background', zh: '个人简介' },
         body: {
           en: `
-            <p class="card-text">Trained as a materials scientist at Oxford, I specialised in semiconductor manufacturing before I moved to Cambridge for a GSK-sponsored PhD. There, I developed manufacturing processes to engineer the slow-release properties of cabotegravir, a long-acting injectable HIV drug. In parallel, I was a Fellow at the Leverhulme Centre for the Future of Intelligence, hosting meetups in the startup bubble at Cambridge, focused on health equity initiatives. I have since moved to commercial strategy at L.E.K. Consulting, specialising in pharmaceutical strategy and M&A. Being both British and Chinese, I have a strong interest in the Chinese biotech ecosystem and how this will influence the international stage.</p>
+            <p class="card-text">Trained as a materials scientist (MEng) at Oxford, I specialised in using analytical techniques to engineer semiconductor systems for transistors. I then moved to Cambridge for a GSK-sponsored PhD: a switch to biopharma. The common link is the use of analytical techniques: specifically, electron microscopy. At GSK, I leveraged nano-scale engineering (enabled by electron microscopy) to create the slow-release properties of a long-acting injectable HIV drug (cabotegravir). I have since moved to life sciences commercial strategy and M&A due diligence at L.E.K. Consulting.</p>
             <div class="pill-row">
               <span class="pill">Pharmaceutical Strategy</span>
-              <span class="pill">AI in Healthcare</span>
+              <span class="pill">M&A Due Diligence</span>
               <span class="pill">New Drug Modalities</span>
-              <span class="pill">Health Equity</span>
-              <span class="pill">China–Europe</span>
             </div>`,
           zh: `
             <p class="card-text">（中文内容待填写）</p>
@@ -211,8 +208,8 @@ const CONTENT = {
         }
       },
       {
-        tag:     { en: 'Research',      zh: '研究'   },
-        title:   { en: 'Publications',  zh: '发表论文' },
+        tag:     { en: 'Academic Research',      zh: '研究'   },
+        title:   { en: 'Peer-Reviewed Publications',  zh: '发表论文' },
         preview: { en: 'Nanoscience · Drug Delivery · Materials', zh: '纳米科学 · 药物递送 · 材料' },
         body: {
           en: `

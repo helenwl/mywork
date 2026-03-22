@@ -897,8 +897,8 @@
     <span class="nav-name">Helen W. Leung PhD</span>
     <div class="nav-right">
       <div class="nav-switcher">
-        <button class="nav-btn active" id="btn-about" onclick="switchView('about')">About Me</button>
-        <button class="nav-btn"        id="btn-work"  onclick="switchView('work')">My Work</button>
+        <button class="nav-btn active" id="btn-about" onclick="switchView('about')">My Work</button>
+        <button class="nav-btn"        id="btn-work"  onclick="switchView('work')">Context</button>
       </div>
       <div id="lang-toggle">
         <button class="lang-btn active" id="lang-en" onclick="switchLang('en')">EN</button>
@@ -976,7 +976,6 @@
     <button class="contact-x" onclick="closeContact()">✕</button>
     <h2 id="cm-heading">Get in <em>touch.</em></h2>
     <p id="cm-sub">Founders, investors, researchers and collaborators — Helen would love to connect.</p>
-    <a class="c-link" href="https://www.linkedin.com/in/helen-w-leung/" target="_blank" rel="noopener"><span class="c-icon">✉</span>Get in touch on LinkedIn</a>
     <a class="c-link" href="https://www.linkedin.com/in/helen-w-leung/" target="_blank" rel="noopener"><span class="c-icon">in</span>LinkedIn</a>
     <a class="c-link" href="https://x.com/Helen_W_Leung" target="_blank" rel="noopener"><span class="c-icon">𝕏</span>Twitter / X</a>
   </div>
@@ -1071,7 +1070,6 @@ function renderWorkView() {
     const leftCardHTML = lb ? `<div class="stage-card-wrap left-card${isLeftSelected ? ' open' : ''}" data-stage="${i}">
       <div class="stage-card">
         <p class="stage-card-tag">${L(lb.tag)}</p>
-        <h3 class="stage-card-title">${L(lb.title)}</h3>
         ${L(lb.body)}
       </div>
     </div>` : '';
@@ -1098,7 +1096,6 @@ function renderWorkView() {
     <div class="stage-card-wrap main-card${isSelected ? ' open' : ''}" data-stage="${i}">
       <div class="stage-card">
         <p class="stage-card-tag">${L(stage.tag)}</p>
-        <h3 class="stage-card-title">${L(stage.title)}</h3>
         ${L(stage.body)}
       </div>
     </div>
@@ -1106,8 +1103,7 @@ function renderWorkView() {
   }).join('');
 
   document.getElementById('work-pipeline').innerHTML =
-    `<h2 class="pipeline-title">${L(data.headline)}</h2>
-    <div class="pipeline-body">${stagesHTML}</div>`;
+    `<div class="pipeline-body">${stagesHTML}</div>`;
 }
 
 function selectStage(idx) {
