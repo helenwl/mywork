@@ -138,27 +138,6 @@ const CONTENT = {
         badgeAbbr:  'LEK',
         badgeLabel: { en: 'L.E.K. Consulting', zh: 'L.E.K. 咨询' },
         badgeImg:   'logos/lek.png',
-        /* Morgan Stanley bubble — commented out, restore leftBadge to re-enable
-        leftBadge: {
-          abbr:    'MS',
-          label:   { en: 'Morgan Stanley', zh: '摩根士丹利' },
-          img:     null,
-          tag:     { en: 'Trading Technology', zh: '交易科技' },
-          title:   { en: 'Morgan Stanley', zh: '摩根士丹利' },
-          sublabel:{ en: 'European Equities · Trading Technology · ML', zh: '欧洲股票 · 交易科技 · 机器学习' },
-          body: {
-            en: `
-              <p class="card-text">Trading Business and Data Analyst in European Equities Trades Technology — data flow and analysis of the bank's trading activity through the London Stock Exchange. Built an ML model to flag anomalies in trading data.</p>
-              <div class="pill-row">
-                <span class="pill">European Equities</span>
-                <span class="pill">Trading Technology</span>
-                <span class="pill">Data Analysis</span>
-                <span class="pill">Machine Learning</span>
-              </div>`,
-            zh: `<p class="card-text">（中文内容待填写）</p>`
-          }
-        },
-        */
         body: {
           en: `
             <p class="card-text">Life Sciences Specialist at L.E.K. Consulting.  
@@ -213,26 +192,6 @@ const CONTENT = {
         preview: { en: 'Nanoscience · Drug Delivery · Materials', zh: '纳米科学 · 药物递送 · 材料' },
         body: {
           en: `
-            <!-- ── RESEARCH CHAT WIDGET — commented out for MVP; restore for Phase 5
-            <div class="chat-widget" id="chat-widget">
-              <div class="chat-widget-header">
-                <span class="chat-widget-title">Ask about my research</span>
-                <span class="chat-widget-meta" id="chat-remaining">Powered by Claude · 10 questions remaining</span>
-              </div>
-              <div class="chat-messages" id="chat-messages">
-                <div class="chat-msg assistant">Hi — I can answer questions about Helen's published research. What would you like to know?</div>
-              </div>
-              <div class="chat-input-row">
-                <textarea id="chat-input" placeholder="Ask a question about Helen's research…" maxlength="500" rows="2"></textarea>
-                <button id="chat-send">Send</button>
-              </div>
-              <div class="chat-footer-row">
-                <span id="chat-char-count">0 / 500</span>
-                <span id="chat-error"></span>
-              </div>
-            </div>
-            ──────────────────────────────────────────────────────── -->
-
             <!-- ── FULL PAPER LINKS ───────────────────────────── -->
             <div class="pub-links">
               <p class="pub-links-label">Read the full papers</p>
@@ -254,26 +213,6 @@ const CONTENT = {
               <p class="pub-footnote">* First author</p>
             </div>`,
           zh: `
-            <!-- ── RESEARCH CHAT WIDGET — commented out for MVP; restore for Phase 5
-            <div class="chat-widget" id="chat-widget">
-              <div class="chat-widget-header">
-                <span class="chat-widget-title">询问我的研究</span>
-                <span class="chat-widget-meta" id="chat-remaining">由 Claude 提供支持 · 剩余 10 次提问</span>
-              </div>
-              <div class="chat-messages" id="chat-messages">
-                <div class="chat-msg assistant">您好——我可以回答关于Helen发表研究的问题。请问您想了解什么？</div>
-              </div>
-              <div class="chat-input-row">
-                <textarea id="chat-input" placeholder="请提问关于Helen研究的问题……" maxlength="500" rows="2"></textarea>
-                <button id="chat-send">发送</button>
-              </div>
-              <div class="chat-footer-row">
-                <span id="chat-char-count">0 / 500</span>
-                <span id="chat-error"></span>
-              </div>
-            </div>
-            ──────────────────────────────────────────────────────── -->
-
             <!-- ── FULL PAPER LINKS ───────────────────────────── -->
             <div class="pub-links">
               <p class="pub-links-label">阅读完整论文</p>
@@ -296,29 +235,6 @@ const CONTENT = {
             </div>`
         }
       },
-      /* Other Interests card — commented out for MVP, restore to re-enable
-      {
-        tag:     { en: 'Personal',       zh: '个人'   },
-        title:   { en: 'Other Interests', zh: '其他兴趣' },
-        preview: { en: 'Beyond the lab and the boardroom', zh: '实验室与董事会之外' },
-        body: {
-          en: `
-            <p class="card-text">On another note, I love pottery, painting, and music! </p>
-            <div class="pill-row">
-              <span class="pill">Classical Music</span>
-              <span class="pill">Pottery</span>
-              <span class="pill">Art</span>
-            </div>`,
-          zh: `
-            <p class="card-text">塑造Helen思维方式的好奇心与热情——实验室与董事会之外。</p>
-            <div class="pill-row">
-              <span class="pill">古典音乐</span>
-              <span class="pill">陶艺</span>
-              <span class="pill">艺术</span>
-            </div>`
-        }
-      }
-      */
     ]
   }
 };

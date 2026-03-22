@@ -4,6 +4,12 @@
 # Node dependencies (server only — not needed for static deployment)
 node_modules/
 
+# Server files (Phase 5 — not part of static deployment)
+server.js
+package.json
+package-lock.json
+.env.example
+
 # macOS
 .DS_Store
 
