@@ -286,13 +286,6 @@
 
     /* ── PIPELINE (My Work view) ──────────────────────────────── */
 
-    /* Section title above pipeline */
-    .pipeline-title {
-      font-family: var(--font-display); font-size: 2.6rem; font-weight: 400;
-      color: var(--navy); line-height: 1.15;
-      text-align: center; margin-bottom: 2.8rem;
-    }
-
     /* Pipeline body: flex column so stages fill the available page height */
     .pipeline-body {
       position: relative;
@@ -1059,8 +1052,6 @@ function renderAccordion(viewId) {
 function renderAll() {
   renderWorkView();
   renderAccordion('about');
-  // Re-inject previews after DOM rebuild (uses cache, no extra network calls)
-  if (typeof loadPubPreviews === 'function') loadPubPreviews();
 }
 
 // ── VIEW SWITCH ─────────────────────────────────────────────
@@ -1166,7 +1157,6 @@ function closeContact() { document.getElementById('contact-modal').classList.rem
 // ── INIT ─────────────────────────────────────────────────────
 renderAll();
 updateUIStrings();
-loadPubPreviews();
 </script>
 </body>
 </html>
