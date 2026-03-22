@@ -1,0 +1,18 @@
+# Environment secrets — NEVER commit these
+.env
+
+# Node dependencies (server only — not needed for static deployment)
+node_modules/
+
+# macOS
+.DS_Store
+
+# Backup / scratch files
+backup_index/
+content.jsbackup.text
+css2
+portfolio.html
+Helen — Portfolio_files/
+
+# Source PDFs (large — keep locally only)
+academicpapers/
