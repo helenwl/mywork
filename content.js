@@ -1,16 +1,15 @@
 // ── UI STRINGS (bilingual) ─────────────────────────────────
 const UI = {
   en: {
-    navWork:    'Context',
-    navAbout:   'My Work',
-    navContact: 'Contact ↗',
-    cmHeading:  'Get in <em>touch.</em>',
-    cmSub:      'Always interested to hear new points of view...',
+    navAbout:        'About',
+    navPublications: 'Publications',
+    navWork:         'My Work in Context'
   },
   zh: {
-    navWork:    '背景',
-    navAbout:   '我的工作',
-    navContact: '联系 ↗',
+    navAbout:        '关于我',
+    navPublications: '发表论文',
+    navWork:         '我的工作背景',
+    navContact:      '联系 ↗',
     cmHeading:  '与我<em>联系。</em>',
     cmSub:      '创始人、投资者、研究者及合作者 — 欢迎与Helen建立连接。',
   }
@@ -28,6 +27,10 @@ const CONTENT = {
     tagline: {
       en: 'From target identification to commercial investment.',
       zh: '从靶点识别到商业投资。'
+    },
+    intro: {
+      en: 'The life sciences ecosystem has multiple stages and stakeholders. I\'ve had the opportunity to work at various stages in the pipeline, visualised below.',
+      zh: '生命科学生态系统涵盖多个阶段与利益相关者。凭借我的工程学背景，我有幸参与了管线中的多个环节。'
     },
 
     // ── PIPELINE STAGES ──────────────────────────────────────
@@ -101,7 +104,7 @@ const CONTENT = {
         },
         body: {
           en: `
-            <p class="card-text">AI Researcher: with crystallography domain expertise, I developed structure prediction capabilities (to streamline production of rare-earth minerals) at <a href="https://www.altrove.ai" target="_blank" rel="noopener" class="card-link">Altrove</a>, a deep-tech startup. Built a virtual lab connecting experimental outputs to the in-house AI model. For both organic and inorganic materials systems, there are many parallels in manufacturing.</p>
+            <p class="card-text">There's plenty of parallel problems when it comes to manufacturing organic and inorganic materials systems. At <a href="https://www.altrove.ai" target="_blank" rel="noopener" class="card-link">Altrove</a>, a deep-tech AI x Materials startup, I used my crystallography expertise, to develop structure prediction capabilities (to streamline production of rare-earth minerals). This was part of a move to build a virtual lab connecting experimental outputs to the in-house AI model. </p>
             <div class="pill-row">
               <span class="pill">Crystal Structure Prediction</span>
               <span class="pill">Virtual Lab/AI dev</span>
@@ -119,7 +122,7 @@ const CONTENT = {
         badgeImg:   'logos/lcfi.png.jpeg',
         body: {
           en: `
-            <p class="card-text">I am a Fellow at LCFI (Leverhulme Centre for the Future of Intelligence, Cambridge) where I work with academic and industry contacts to close the health equity gap e.g., by hosting founder events to help startups find people/funding.</p>
+            <p class="card-text">Moving to less technical (but equally important!) work, I am a Fellow at LCFI (Leverhulme Centre for the Future of Intelligence, Cambridge) where I work with academic and industry contacts to close the health equity gap e.g., by hosting founder events to help startups find people/funding.</p>
             <div class="pill-row">
               <span class="pill">Gender Health Gap</span>
               <span class="pill">Explainable AI</span>
@@ -140,9 +143,10 @@ const CONTENT = {
         badgeImg:   'logos/lek.png',
         body: {
           en: `
-            <p class="card-text">Life Sciences Specialist at L.E.K. Consulting.  
-            Specialising in pharmaceutical strategy, commercial due diligence, and vendor due diligence.  
-            Active interest/developing involvement in China–Europe biotech activity.</p>
+            <p class="card-text">Nowadays, I'm a life sciences specialist at L.E.K. Consulting.  
+            My work includes pharmaceutical strategy, commercial due diligence, and vendor due diligence. This is where it clicks together for me:
+            I've worked in the deep science of drug discovery and development, and in this job, I help to realise downstream commercial results.
+           </p>
             <div class="pill-row">
               <span class="pill">Pharmaceutical Strategy</span>
               <span class="pill">Commercial Due Diligence</span>
@@ -161,7 +165,7 @@ const CONTENT = {
     eyebrow:  { en: 'About Me', zh: '关于我' },
     headline: { en: '', zh: '' },
     tagline: {
-      en: "British-Chinese scientist working across the global life sciences ecosystem. Experienced with academic research, industrial R&D, and commercial strategy.",
+      en: "Hi, I'm Helen! I'm a materials scientist now working in life sciences strategy consulting. During my PhD, my research advanced the next generation of nano-engineered drug modalities through the lens of electron microscopy. I love the science but am equally engaged with the commercial side of innovation.",
       zh: '从实验室到董事会，Helen是一位材料科学家与研究者，研究领域横跨药物表征、纳米医学与精准医疗人工智能。'
     },
     cards: [
@@ -169,7 +173,7 @@ const CONTENT = {
         title:   { en: 'Background', zh: '个人简介' },
         body: {
           en: `
-            <p class="card-text">Trained as a materials scientist (MEng) at Oxford, I specialised in using analytical techniques to engineer semiconductor systems for transistors. I then moved to Cambridge for a GSK-sponsored PhD: a switch to biopharma. The common link is the use of analytical techniques: specifically, electron microscopy. At GSK, I leveraged nano-scale engineering (enabled by electron microscopy) to create the slow-release properties of a long-acting injectable HIV drug (cabotegravir). I have since moved to life sciences commercial strategy and M&A due diligence at L.E.K. Consulting.</p>
+            <p class="card-text">I trained as a materials engineer (MEng) at Oxford, where I specialised in using analytical chemistry techniques to control the electronic properties of semiconductors for use in transistors. I then moved to Cambridge for a GSK-sponsored PhD: a switch to biopharma. The common link here is the use of analytical chemistry techniques: specifically, electron microscopy. The highlight of my research was using cryo-electron microscopy to nano-engineer the slow-release properties of a long-acting injectable HIV drug (cabotegravir). You can find out more by taking a look at my publications. I have since moved to life sciences commercial strategy and M&A due diligence at L.E.K. Consulting.</p>
             <div class="pill-row">
               <span class="pill">Pharmaceutical Strategy</span>
               <span class="pill">M&A Due Diligence</span>
@@ -192,44 +196,84 @@ const CONTENT = {
         preview: { en: 'Nanoscience · Drug Delivery · Materials', zh: '纳米科学 · 药物递送 · 材料' },
         body: {
           en: `
+            <p class="pub-intro">I've signposted the most exciting takeaways from each paper in a paragraph below. These are my own words, but feel free to use your LLM of choice to explore more.</p>
             <!-- ── FULL PAPER LINKS ───────────────────────────── -->
             <div class="pub-links">
-              <p class="pub-links-label">Read the full papers</p>
               <div class="pub-link-item">
                 <a class="pub-link-title" href="https://journals.iucr.org/m/issues/2024/05/00/of5005/index.html" target="_blank" rel="noopener">From formulation to structure: 3D electron diffraction for the structure solution of a new indomethacin polymorph from an amorphous solid dispersion ↗</a>
-                <p class="pub-link-author">Helen W. Leung* et al. · IUCrJ, 2024 <span class="iucr-badge">International Union of Crystallography</span></p>
+                <p class="pub-link-author"><u>Helen W. Leung*</u> et al. · IUCrJ, 2024 <span class="iucr-badge">International Union of Crystallography</span></p>
+                <button class="pub-toggle" onclick="togglePubSummary(this)" aria-expanded="false">↓ Read my (non-technical) key takeaways</button>
+                <div class="pub-expand">
+                <p class="pub-summary">Small molecule drugs have dominated the pharmaceuticals market for the past decades. Although new drug modalities (such as biologics- think antibodies, cell and gene therapies) are being developed, small molecules still play an important role in the drug pipeline. In fact, most of the drugs that the vast majority of us will take for non-terminal illnesses are small molecules. A given small molecule drug can have many forms (in the solid state, called crystal polymorphism). Polymorphism can play an important role in drug development because some polymorphs of drugs may have favourable solubility properties, resulting in better efficacy. Some polymorphs may be toxic (as in the case of thalidomide). In this paper, I discover a new polymorph of the arthritis/gout drug, indomethacin. Upon solving its crystal structure (i.e., finding out exactly how the molecules are arranged in this form), we can see that this form is likely more soluble than the marketed form. In oral dosage forms, more soluble forms tend to be absorbed more easily by the body. That's why this work is exciting.</p>
                 <img class="pub-link-preview" src="figures/Leung_indomethacin_paper.png" alt="Indomethacin paper figure" loading="lazy">
-              </div>
-              <div class="pub-link-item">
-                <a class="pub-link-title" href="https://www.nature.com/articles/s42004-025-01729-2" target="_blank" rel="noopener">Polytypes and planar defects revealed in the purine base xanthine using multi-dimensional electron diffraction ↗</a>
-                <p class="pub-link-author">Helen W. Leung* et al. · Communications Chemistry, 2025 <span class="nature-badge">Nature Portfolio</span></p>
-                <img class="pub-link-preview" src="figures/Leung_xanthinepaper2.png" alt="Xanthine polytypes paper figure" loading="lazy">
+                </div>
               </div>
               <div class="pub-link-item">
                 <a class="pub-link-title" href="https://pubs.acs.org/doi/full/10.1021/acs.cgd.4c01594" target="_blank" rel="noopener">Revealing the crystal structure of the purine base xanthine with three-dimensional (3D) electron diffraction ↗</a>
-                <p class="pub-link-author">Helen W. Leung* et al. · Crystal Growth &amp; Design, 2025 <span class="acs-badge">American Chemical Society</span></p>
+                <p class="pub-link-author"><u>Helen W. Leung*</u> et al. · Crystal Growth &amp; Design, 2025 <span class="acs-badge">American Chemical Society</span></p>
+                <button class="pub-toggle" onclick="togglePubSummary(this)" aria-expanded="false">↓ Read my (non-technical) key takeaways</button>
+                <div class="pub-expand">
+                <p class="pub-summary">Xanthine is a molecule that we all produce in our bodies as a result of metabolism. It is closely chemically related to guanine and adenine- what our DNA is made of. Yet, before this work, the arrangement of xanthine molecules in the solid state (its crystal structure) was never known, because of limitations of analytical techniques. Kind of surprising given how fundamental a molecule this is. In this work, I solve the crystal structure of xanthine. But more importantly, this piece of work demonstrates the power of the electron microscope. We show in the paper that we can resolve the positioning of the hydrogen atoms in the structure. Hydrogen is the lightest element in the periodic table, so it typically interacts only very lightly with analytical techniques. The fact that we can see the hydrogens here is important beyond xanthine: the position of hydrogens in a molecule determines what enantiomers we have of a given molecule. In the world of small molecules, different enantiomers can have very different properties in the body (from higher efficacy, to toxicity). This work helps establish the use of electron microscopy in the drug development pipeline.</p>
                 <img class="pub-link-preview" src="figures/Leung_xanthinepaper1.png" alt="Xanthine crystal structure paper figure" loading="lazy">
+                </div>
+              </div>
+              <div class="pub-link-item">
+                <a class="pub-link-title" href="https://www.nature.com/articles/s42004-025-01729-2" target="_blank" rel="noopener">Polytypes and planar defects revealed in the purine base xanthine using multi-dimensional electron diffraction ↗</a>
+                <p class="pub-link-author"><u>Helen W. Leung*</u> et al. · Communications Chemistry, 2025 <span class="nature-badge">Nature Portfolio</span></p>
+                <button class="pub-toggle" onclick="togglePubSummary(this)" aria-expanded="false">↓ Read my (non-technical) key takeaways</button>
+                <div class="pub-expand">
+                <p class="pub-summary">After having discovered the crystal structure of xanthine in my previous paper, this paper goes on to discover more polymorphs of xanthine (see my indomethacin paper for context on polymorphs). Not only do I find more forms of this fundamental molecule, I crucially show that it is possible to have multiple polymorphs within a single nano-crystal of xanthine. This matters because of how drugs are currently regulated by the ICH Q guidelines (legislation for good practice in drug development). It turns out that molecules which have a planar structure, like xanthine, can easily switch in and out between polymorphic forms on the nanoscale. Therefore, defining what a polymorph is- and the associated physicochemical properties such as solubility for small molecule drugs- is more complicated than previously thought.</p>
+                <img class="pub-link-preview" src="figures/Leung_xanthinepaper2.png" alt="Xanthine polytypes paper figure" loading="lazy">
+                </div>
+              </div>
+              <div class="pub-link-item">
+                <a class="pub-link-title" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=S-E_D24AAAAJ&citation_for_view=S-E_D24AAAAJ:IjCSPb-OGe4C" target="_blank" rel="noopener">Combining 3D-Electron Diffraction with Scanning Electron Diffraction to investigate nanocrystals within a long acting injectable pharmaceutical formulation ↗</a>
+                <p class="pub-link-author"><u>Helen W. Leung*</u> et al. · Acta Crystallographica A <span class="iucr-badge">International Union of Crystallography</span></p>
+                <button class="pub-toggle" onclick="togglePubSummary(this)" aria-expanded="false">↓ Read my (non-technical) key takeaways</button>
+                <div class="pub-expand">
+                <p class="pub-summary">We can think of nanoscience as engineering at the molecular scale. Long-acting injectables are a technology designed to deliver a slow-release drug, rather than a patient having to take daily oral medicine. The underlying technology harnesses basic surface chemistry principles at the nanoscale. In this paper, I examine the effects of nanomilling on a long-acting injectable HIV drug. Without the nanomilling, the drug particles would be too large and have limited shelf life and performance. It is by nano-milling that we can control the particle size and crystal behaviour of the solid state drug, and give it these desirable properties.</p>
+                </div>
               </div>
               <p class="pub-footnote">* First author</p>
             </div>`,
           zh: `
+            <p class="pub-intro">I've signposted the most exciting takeaways from each paper in a paragraph below. These are my own words — but feel free to use your LLM of choice to explore more! Or feel free to reach out and ask me.</p>
             <!-- ── FULL PAPER LINKS ───────────────────────────── -->
             <div class="pub-links">
-              <p class="pub-links-label">阅读完整论文</p>
               <div class="pub-link-item">
                 <a class="pub-link-title" href="https://journals.iucr.org/m/issues/2024/05/00/of5005/index.html" target="_blank" rel="noopener">From formulation to structure: 3D electron diffraction for the structure solution of a new indomethacin polymorph from an amorphous solid dispersion ↗</a>
-                <p class="pub-link-author">Helen W. Leung* et al. · IUCrJ, 2024 <span class="iucr-badge">International Union of Crystallography</span></p>
+                <p class="pub-link-author"><u>Helen W. Leung*</u> et al. · IUCrJ, 2024 <span class="iucr-badge">International Union of Crystallography</span></p>
+                <button class="pub-toggle" onclick="togglePubSummary(this)" aria-expanded="false">↓ Read my (non-technical) key takeaways</button>
+                <div class="pub-expand">
+                <p class="pub-summary">Small molecule drugs have dominated the pharmaceuticals market for the past decades. Although new drug modalities (such as biologics-  think antibodies, cell and gene therapies) are being developed, small molecules still play an important role in the drug pipeline. In fact, most of the drugs that the vast majority of us will take for non-terminal illnesses are small molecules. A given small molecule drug can have many forms (in the solid state, called crystal polymorphism). Polymorphism can play an important role in drug development because some polymorphs of drugs may have favourable solubility properties, resulting in better efficacy. Some polymorphs may be toxic (as in the case of thalidomide). In this paper, I discover a new polymorph of the arthritis/gout drug, indomethacin. Upon solving its crystal structure (i.e., finding out exactly how the molecules are arranged in this form), we can see that this form is likely more soluble than the marketed form. In oral dosage forms, more soluble forms tend to be absorbed more easily by the body. That's why this work is exciting.</p>
                 <img class="pub-link-preview" src="figures/Leung_indomethacin_paper.png" alt="Indomethacin paper figure" loading="lazy">
-              </div>
-              <div class="pub-link-item">
-                <a class="pub-link-title" href="https://www.nature.com/articles/s42004-025-01729-2" target="_blank" rel="noopener">Polytypes and planar defects revealed in the purine base xanthine using multi-dimensional electron diffraction ↗</a>
-                <p class="pub-link-author">Helen W. Leung* et al. · Communications Chemistry, 2025 <span class="nature-badge">Nature Portfolio</span></p>
-                <img class="pub-link-preview" src="figures/Leung_xanthinepaper2.png" alt="Xanthine polytypes paper figure" loading="lazy">
+                </div>
               </div>
               <div class="pub-link-item">
                 <a class="pub-link-title" href="https://pubs.acs.org/doi/full/10.1021/acs.cgd.4c01594" target="_blank" rel="noopener">Revealing the crystal structure of the purine base xanthine with three-dimensional (3D) electron diffraction ↗</a>
-                <p class="pub-link-author">Helen W. Leung* et al. · Crystal Growth &amp; Design, 2025 <span class="acs-badge">American Chemical Society</span></p>
+                <p class="pub-link-author"><u>Helen W. Leung*</u> et al. · Crystal Growth &amp; Design, 2025 <span class="acs-badge">American Chemical Society</span></p>
+                <button class="pub-toggle" onclick="togglePubSummary(this)" aria-expanded="false">↓ Read my (non-technical) key takeaways</button>
+                <div class="pub-expand">
+                <p class="pub-summary">Xanthine is a molecule that we all produce in our bodies as a result of metabolism. It is closely chemically related to guanine and adenine — what our DNA is made of. Yet, before this work, the arrangement of xanthine molecules in the solid state (its crystal structure) was never known, because of limitations of analytical techniques. Kind of surprising given how fundamental a molecule this is. In this work, I solve the crystal structure of xanthine. But more importantly, this piece of work demonstrates the power of the electron microscope. We show in the paper that we can resolve the positioning of the hydrogen atoms in the structure. Hydrogen is the lightest element in the periodic table, so it typically interacts only very lightly with analytical techniques. The fact that we can see the hydrogens here is important beyond xanthine: the position of hydrogens in a molecule determines what enantiomers we have of a given molecule. In the world of small molecules, different enantiomers can have very different properties in the body (from higher efficacy, to toxicity). This work helps establish the use of electron microscopy in the drug development pipeline.</p>
                 <img class="pub-link-preview" src="figures/Leung_xanthinepaper1.png" alt="Xanthine crystal structure paper figure" loading="lazy">
+                </div>
+              </div>
+              <div class="pub-link-item">
+                <a class="pub-link-title" href="https://www.nature.com/articles/s42004-025-01729-2" target="_blank" rel="noopener">Polytypes and planar defects revealed in the purine base xanthine using multi-dimensional electron diffraction ↗</a>
+                <p class="pub-link-author"><u>Helen W. Leung*</u> et al. · Communications Chemistry, 2025 <span class="nature-badge">Nature Portfolio</span></p>
+                <button class="pub-toggle" onclick="togglePubSummary(this)" aria-expanded="false">↓ Read my (non-technical) key takeaways</button>
+                <div class="pub-expand">
+                <p class="pub-summary">After having discovered the crystal structure of xanthine in my previous paper, this paper goes on to discover more polymorphs of xanthine (see my indomethacin paper for context on polymorphs). Not only do I find more forms of this fundamental molecule, I crucially show that it is possible to have multiple polymorphs within a single nano-crystal of xanthine. This matters because of how drugs are currently regulated by the ICH Q guidelines (legislation for good practice in drug development). It turns out that molecules which have a planar structure, like xanthine, can easily switch in and out between polymorphic forms on the nanoscale. Therefore, defining what a polymorph is— and the associated physicochemical properties such as solubility for small molecule drugs- is more complicated than previously thought.</p>
+                <img class="pub-link-preview" src="figures/Leung_xanthinepaper2.png" alt="Xanthine polytypes paper figure" loading="lazy">
+                </div>
+              </div>
+              <div class="pub-link-item">
+                <a class="pub-link-title" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=S-E_D24AAAAJ&citation_for_view=S-E_D24AAAAJ:IjCSPb-OGe4C" target="_blank" rel="noopener">Combining 3D-Electron Diffraction with Scanning Electron Diffraction to investigate nanocrystals within a long acting injectable pharmaceutical formulation ↗</a>
+                <p class="pub-link-author"><u>Helen W. Leung*</u> et al. · Acta Crystallographica A <span class="iucr-badge">International Union of Crystallography</span></p>
+                <button class="pub-toggle" onclick="togglePubSummary(this)" aria-expanded="false">↓ Read my (non-technical) key takeaways</button>
+                <div class="pub-expand">
+                <p class="pub-summary">We can think of nanoscience as engineering at the molecular scale. Long-acting injectables are a technology designed to deliver a slow-release drug, rather than a patient having to take daily oral medicine. The underlying technology harnesses basic surface chemistry principles at the nanoscale. In this paper, I examine the effects of nanomilling on a long-acting injectable HIV drug. Without the nanomilling, the drug particles would be too large and have limited shelf life and performance. It is by nano-milling that we can control the particle size and crystal behaviour of the solid state drug, and give it these desirable properties.</p>
+                </div>
               </div>
               <p class="pub-footnote">* First author</p>
             </div>`
@@ -252,7 +296,7 @@ const PUBLICATIONS = [
     title: 'Polytypes and planar defects revealed in the purine base xanthine using multi-dimensional electron diffraction',
     journal: 'Communications Chemistry, 8, 331',
     doi: 'https://doi.org/10.1038/s42004-025-01729-2',
-    summary: `This paper uses a combination of 3D electron diffraction (3D-ED) and 4D scanning transmission electron microscopy (4D-STEM) to explore the microstructure of xanthine crystals in detail. Building directly on the first xanthine paper, it identifies twinning in Form I xanthine (a 180° rotation relationship between crystal domains about the [101] axis), solves the structure of a new second polymorph of xanthine called Form II (orthorhombic, space group P2₁2₁2₁, unit cell a=10.10 Å, b=12.54 Å, c=17.91 Å), and shows that Form II is a polytype of Form I — meaning both share identical intra-layer hydrogen-bonded arrangements but differ in how those layers stack. Form I stacking follows an ABAB sequence; Form II follows ABCD, with the layer repeating every four layers. 4D-STEM directly visualises twin boundaries, polytype interfaces, and fine-scale planar disorder (stacking faults at near-random intervals) within individual sub-micron particles of xanthine — demonstrating that a single particle can contain multiple coexisting crystal forms. A multiphase Rietveld refinement of high-resolution synchrotron X-ray powder diffraction (XRPD) data, incorporating a stacking fault model, confirmed these findings in bulk powder. The work argues that disorder on the nanoscale is likely common in layered organic molecular crystals more broadly, with implications for pharmaceutical polymorphism characterisation and regulatory requirements.`
+    summary: `This paper uses a combination of 3D electron diffraction (3D-ED) and 4D scanning transmission electron microscopy (4D-STEM) to explore the microstructure of xanthine crystals in detail. Building directly on the first xanthine paper, it identifies twinning in Form I xanthine (a 180° rotation relationship between crystal domains about the [101] axis), solves the structure of a new second polymorph of xanthine called Form II (orthorhombic, space group P2₁2₁2₁, unit cell a=10.10 Å, b=12.54 Å, c=17.91 Å), and shows that Form II is a polytype of Form I— meaning both share identical intra-layer hydrogen-bonded arrangements but differ in how those layers stack. Form I stacking follows an ABAB sequence; Form II follows ABCD, with the layer repeating every four layers. 4D-STEM directly visualises twin boundaries, polytype interfaces, and fine-scale planar disorder (stacking faults at near-random intervals) within individual sub-micron particles of xanthine — demonstrating that a single particle can contain multiple coexisting crystal forms. A multiphase Rietveld refinement of high-resolution synchrotron X-ray powder diffraction (XRPD) data, incorporating a stacking fault model, confirmed these findings in bulk powder. The work argues that disorder on the nanoscale is likely common in layered organic molecular crystals more broadly, with implications for pharmaceutical polymorphism characterisation and regulatory requirements.`
   },
   {
     year: '2025',
