@@ -532,8 +532,12 @@
       .s-text-l, .s-badge-l, .s-badge-r, .s-text-r { display: none; }
       .s-dot     { grid-column: 1; grid-row: 1; }
       .stage-mobile {
-        display: flex !important; align-items: center; gap: 0.75rem;
+        display: flex !important; flex-direction: column; gap: 0.55rem;
         grid-column: 2; grid-row: 1;
+      }
+      .stage-mobile-row {
+        display: flex; align-items: center; gap: 0.75rem;
+        cursor: pointer;
       }
       .stage-mobile .stage-badge { width: 40px; height: 40px; flex-shrink: 0; }
       .stage-card-wrap { margin-left: 30px; }
@@ -966,13 +970,36 @@ function renderWorkView() {
       <div class="${badgeRClass}">${slBadgeR}</div>
       <div class="s-text-r">${slTextR}</div>
       <div class="stage-mobile">
-        <div class="stage-badge" title="${L(stage.badgeLabel)}">
-          ${stage.badgeImg ? `<img src="${stage.badgeImg}" alt="${L(stage.badgeLabel)}">` : `<span>${stage.badgeAbbr}</span>`}
-        </div>
-        <div>
-          <p class="stage-label">${L(stage.title)}</p>
-          <p class="stage-sublabel">${L(stage.sublabel)}</p>
-        </div>
+        ${isDual ? `
+          <div class="stage-mobile-row" onclick="event.stopPropagation(); selectStage(${i})">
+            <div class="stage-badge" title="${L(stage.badgeLabel)}">
+              ${stage.badgeImg ? `<img src="${stage.badgeImg}" alt="${L(stage.badgeLabel)}">` : `<span>${stage.badgeAbbr}</span>`}
+            </div>
+            <div>
+              <p class="stage-label">${L(stage.title)}</p>
+              <p class="stage-sublabel">${L(stage.sublabel)}</p>
+            </div>
+          </div>
+          <div class="stage-mobile-row" onclick="event.stopPropagation(); selectLeftBadge(${i})">
+            <div class="stage-badge extra-badge" title="${L(lb.label)}">
+              ${lb.img ? `<img src="${lb.img}" alt="${L(lb.label)}">` : `<span>${lb.abbr}</span>`}
+            </div>
+            <div>
+              <p class="stage-label">${L(lb.title)}</p>
+              <p class="stage-sublabel">${L(lb.sublabel)}</p>
+            </div>
+          </div>
+        ` : `
+          <div class="stage-mobile-row" onclick="event.stopPropagation(); selectStage(${i})">
+            <div class="stage-badge" title="${L(stage.badgeLabel)}">
+              ${stage.badgeImg ? `<img src="${stage.badgeImg}" alt="${L(stage.badgeLabel)}">` : `<span>${stage.badgeAbbr}</span>`}
+            </div>
+            <div>
+              <p class="stage-label">${L(stage.title)}</p>
+              <p class="stage-sublabel">${L(stage.sublabel)}</p>
+            </div>
+          </div>
+        `}
       </div>
     </div>
     ${leftCardHTML}
