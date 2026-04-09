@@ -56,7 +56,7 @@ const CONTENT = {
               <span class="pill">3D Electron Diffraction</span>
               <span class="pill">Polymorphism</span>
             </div>`,
-          zh: `<p class="card-text">（中文内容待填写）</p>`
+          zh: `<p class="card-text">攻读博士学位期间，我专攻电子显微镜学。</p>`
         }
       },
       {
@@ -75,7 +75,13 @@ const CONTENT = {
               <span class="pill">Nanoscience</span>
               <span class="pill">Drug Manufacturing</span>
             </div>`,
-          zh: `<p class="card-text">（中文内容待填写）</p>`
+          zh: `<p class="card-text">我研究了一种用于纳米药物的新型制造技术。</p>
+            <div class="pill-row">
+              <span class="pill">Long-Acting Injectables</span>
+              <span class="pill">Cabotegravir</span>
+              <span class="pill">Nanoscience</span>
+              <span class="pill">Drug Manufacturing</span>
+            </div>`
         }
       },
       {
@@ -99,7 +105,7 @@ const CONTENT = {
               <div class="pill-row">
                 <span class="pill">Nanoengineering</span>
               </div>`,
-            zh: `<p class="card-text">（中文内容待填写）</p>`
+            zh: `<p class="card-text">我以优等成绩毕业于牛津大学材料科学专业。</p>`
           }
         },
         body: {
@@ -110,7 +116,12 @@ const CONTENT = {
               <span class="pill">Virtual Lab/AI dev</span>
               <span class="pill">Entrepreneurs First</span>
             </div>`,
-          zh: `<p class="card-text">（中文内容待填写）</p>`
+          zh: `<p class="card-text">我曾在一家制造业初创公司担任软件工程师，负责搭建一个 "virtual lab"。</p>
+            <div class="pill-row">
+              <span class="pill">Crystal Structure Prediction</span>
+              <span class="pill">Virtual Lab/AI dev</span>
+              <span class="pill">Entrepreneurs First</span>
+            </div>`
         }
       },
       {
@@ -131,7 +142,7 @@ const CONTENT = {
               <span class="pill">Precision Medicine</span>
               <span class="pill">Clinical Trial Diversity</span>
             </div>`,
-          zh: `<p class="card-text">（中文内容待填写）</p>`
+          zh: `<p class="card-text">我认为实现医疗平等非常重要。我在 LCFI 担任 research fellow，探索如何利用AI实现这一目标。</p>`
         }
       },
       {
@@ -143,7 +154,7 @@ const CONTENT = {
         badgeImg:   'logos/lek.png',
         body: {
           en: `
-            <p class="card-text">Nowadays, I'm a life sciences specialist at L.E.K. Consulting.  
+            <p class="card-text">Nowadays, I'm a life sciences specialist at L.E.K. Consulting.
             My work includes pharmaceutical strategy, commercial due diligence, and vendor due diligence. This is where it clicks together for me:
             I've worked in the deep science of drug discovery and development, and in this job, I help to realise downstream commercial results.
            </p>
@@ -155,7 +166,15 @@ const CONTENT = {
               <span class="pill">Medical Manufacturing</span>
               <span class="pill">China–Europe</span>
             </div>`,
-          zh: `<p class="card-text">（中文内容待填写）</p>`
+          zh: `<p class="card-text">我现在为制药公司工作，负责战略规划、新药市场准入以及 M&A。</p>
+            <div class="pill-row">
+              <span class="pill">Pharmaceutical Strategy</span>
+              <span class="pill">Commercial Due Diligence</span>
+              <span class="pill">Vendor Due Diligence</span>
+              <span class="pill">New Drug Modalities</span>
+              <span class="pill">Medical Manufacturing</span>
+              <span class="pill">China–Europe</span>
+            </div>`
         }
       }
     ]
@@ -166,7 +185,7 @@ const CONTENT = {
     headline: { en: '', zh: '' },
     tagline: {
       en: "Hi, I'm Helen! I'm a materials scientist now working in life sciences strategy consulting. During my PhD, my research advanced the next generation of nano-engineered drug modalities through the lens of electron microscopy. I love the science but am equally engaged with the commercial side of innovation.",
-      zh: '从实验室到董事会，Helen是一位材料科学家与研究者，研究领域横跨药物表征、纳米医学与精准医疗人工智能。'
+      zh: '你好！我是Helen。我是华裔,来自英国。牛津大学材料工程硕士，剑桥大学材料工程博士。致力于促进中西方生命科学领域的交流与合作。'
     },
     cards: [
       {
@@ -180,14 +199,7 @@ const CONTENT = {
               <span class="pill">New Drug Modalities</span>
             </div>`,
           zh: `
-            <p class="card-text">（中文内容待填写）</p>
-            <div class="pill-row">
-              <span class="pill">药物战略</span>
-              <span class="pill">医疗AI</span>
-              <span class="pill">新型药物模式</span>
-              <span class="pill">健康公平</span>
-              <span class="pill">中欧跨境</span>
-            </div>`
+            <p class="card-text">我毕业于牛津大学，主修材料工程(本科和硕士)。之后我前往剑桥大学攻读博士学位，专攻生物材料工程。我写过几篇期刊文章，可以在Google Scholar上阅读。我现在为制药公司工作，负责制定战略，例如如何推出一款新药。</p>`
         }
       },
       {
