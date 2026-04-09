@@ -11,6 +11,7 @@ and About Me. Each node opens a slide-in side panel.
 - After each task, give me a plain English summary of what changed
 - Notify me clearly when fully done
 - Never delete or overwrite existing content without checking first
+- All changes should be committed and pushed to the `main` branch — always state explicitly when about to push to main and confirm before doing so
 
 ## Code preferences
 - Keep everything in a single index.html file unless I say otherwise
