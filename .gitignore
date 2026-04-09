@@ -22,3 +22,14 @@ Helen — Portfolio_files/
 
 # Source PDFs (large — keep locally only)
 academicpapers/
+
+# Claude Code project files — not needed for website
+CLAUDE.md
+.claude/
+
+# Unused figures — kept locally but not deployed
+figures/Box2_accompanying_figure.png
+figures/Fig1_the_structure_determination_workflow.png
+figures/Figure3.png
+figures/Polymorphs of acetaminophen.png
+figures/pharm_microstructure.jpg
