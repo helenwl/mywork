@@ -1049,7 +1049,11 @@ function selectStage(idx) {
   if (!wasSelected) {
     setTimeout(() => {
       const sel = document.querySelector('#work-pipeline .pipeline-stage.selected');
-      if (sel) sel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const view = document.getElementById('view-work');
+      if (sel && view) {
+        const offset = sel.getBoundingClientRect().top - view.getBoundingClientRect().top;
+        view.scrollBy({ top: offset, behavior: 'smooth' });
+      }
     }, 80);
   }
 }
@@ -1075,7 +1079,11 @@ function selectLeftBadge(stageIdx) {
   if (!wasSelected) {
     setTimeout(() => {
       const open = document.querySelector('#work-pipeline .stage-card-wrap.left-card.open');
-      if (open) open.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const view = document.getElementById('view-work');
+      if (open && view) {
+        const offset = open.getBoundingClientRect().top - view.getBoundingClientRect().top;
+        view.scrollBy({ top: offset, behavior: 'smooth' });
+      }
     }, 80);
   }
 }
